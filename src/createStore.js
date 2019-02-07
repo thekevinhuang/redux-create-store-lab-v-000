@@ -1,6 +1,6 @@
 export default function createStore(reducer) {
   let state
-
+  dispatch({type: '@@INIT'})
   function getState() {
     return state
   }
